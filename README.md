@@ -13,6 +13,7 @@ A simple SDK that allows for the creation of plugins for [CBP Launcher](https://
 * **IsSimpleMod** refers to whether the plugin is just a mod requiring installation in the local mods folder (`= true`), or if it has its own separate functionality (`= false`).
 * **DoSomething** is executed when the plugin is detected (CBP Launcher scans the user's Workshop mod folders for compatible plugins). It's recommended that DoSomething includes CheckIfLoaded. DoSomething is also a good place to declare paths such as the mod's Workshop folder. This function SHOULD NOT use UI interrupts such as MessageBox.
 * **LoadPlugin** and **UnloadPlugin** are used for loading and unloading the plugin respectively. For simple mods, this may just mean copying or deleting mod files respectively.
+* **UpdatePlugin** can be used by simple mod loaders to keep local mod files up to date. For plugins not requiring this functionality, the implemented function can be empty.
 * **CheckIfLoaded** should provide some kind of persistence about whether the mod is loaded or not. A simple way of doing this is to create a text file in `Rise of Nations/CBP` that stores a bool, then read and edit that file as required. This function SHOULD NOT use UI interrupts such as MessageBox.
 
 The two strings provided to all three void functions are the user's RoN Workshop mods folder and the user's RoN local mods folder. You're free to use or ignore these as you see fit, but when writing the functions they must include two string overloads even if you don't use them.
