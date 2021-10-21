@@ -18,10 +18,13 @@ namespace CBPSDK
         bool CBPCompatible { get; }//is the plugin/mod compatible with CBP itself? if not, CBP will have to be unloaded to run the mod
         string PluginDescription { get; }
         bool IsSimpleMod { get; }//is the mod/plugin basically just the loading mechanism for a simple RoN mod which just needs to have files copied (true), or is it more like a mini-program (false)
+        string LoadResult { get; set; }
 
-        void DoSomething(string workshopModsPath, string localModsPath);
-        bool CheckIfLoaded();//must persist between sessions;
+
+        void DoSomething(string workshopModsPath, string localModsPath);//cannot do UI interrupts (e.g. messagebox)
+        bool CheckIfLoaded();//must persist between sessions; cannot do UI interrupts (e.g. messagebox)
         void LoadPlugin(string workshopModsPath, string localModsPath);
         void UnloadPlugin(string workshopModsPath, string localModsPath);
+        void UpdatePlugin(string workshopModsPath, string localModsPath);
     }
 }
