@@ -11,7 +11,7 @@ A simple SDK that allows for the creation of plugins for [CBP Launcher](https://
 
 ### Strings/bools:
 * Title, description, etc are all simple strings that are used to populate the UI with information about the plugin for the user.
-* **CBPCompatible** refers to compatibility with CBP mod itself. Mods which have balance/gameplay changes are an example of incompatible mods which would need to be unloaded in order to use CBP.
+* **CBPCompatible** refers to compatibility with CBP mod itself. Mods which have balance/gameplay changes are an example of incompatible mods (`= false`) which would need to be unloaded in order to use CBP.
 * **IsSimpleMod** refers to whether the plugin is just a mod requiring installation in the local mods folder (`= true`), or if it has its own separate functionality (`= false`).
 * **LoadResult** will be used to display a message after plugins are loaded. It is the only property that is not read-only. It can be populated with an error message if an error occurs during loading, or a confirmation of successful loading if no error occurred. It can also optionally be left null, in which case successful loading is assumed, but explicitly modifying the value based on the result of other functions is recommended.
 
