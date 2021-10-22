@@ -2,7 +2,7 @@
 A simple SDK that allows for the creation of plugins for [CBP Launcher](https://github.com/MHLoppy/CBP-Launcher).
 
 ### Usage
-1) Create a C# class library using .NET Framework (4.7.2 is what's been vetted; I'm unsure on compatibility with other versions).
+1) Create a C# class library using .NET Framework (4.7.2 is what the SDK uses - I have no idea what compatibility that implies for other versions or even .NET core).
 2) Download or build the CBP SDK dll. Add a reference to the CBP SDK dll in your project.
 3) In your class library's class, add a using statement that references the SDK (`using CBPSDK;`).
 4) Inherit from the CBP SDK. (`public class ClassName : IPluginCBP`)
