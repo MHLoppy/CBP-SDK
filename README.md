@@ -8,6 +8,7 @@ A simple SDK that allows for the creation of plugins for [CBP Launcher](https://
 4) Inherit from the CBP SDK. (`public class ClassName : IPluginCBP`)
 5) Provide the required 5 strings and 3 bools.
 6) Provide the required 4 void functions (each of these should expect two string overloads, but they're not forced to use them).
+7) Build your DLL, then publish it as part of a RoN:EE mod on the Steam Workshop. CBP Launcher automatically finds compatible DLLs in a user's Workshop files.
 
 ### Strings/bools:
 * **PluginTitle**, **PluginDescription**, **PluginAuthor**, and **PluginVersion** are all simple strings that are used to populate the UI with information about the plugin for the user.
