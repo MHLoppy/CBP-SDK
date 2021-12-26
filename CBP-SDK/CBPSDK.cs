@@ -16,7 +16,7 @@ namespace CBPSDK
         string PluginVersion { get; }
         string PluginAuthor { get; }
         bool CBPCompatible { get; }//is the plugin/mod compatible with CBP itself? if not, CBP will have to be unloaded to run the mod
-        bool DefaultMultiplayerCompatible { get; }//functionally subset of CBPCompatible (should never be true if CBPCompatible is false): if only one player is using the mod, would multiplayer OoS?
+        bool DefaultMultiplayerCompatible { get; }//in many ways a subset of CBPCompatible (should never be true if CBPCompatible is false, but in rare cases the reverse is possible): if only one player is using the mod, would multiplayer OoS?
         string PluginDescription { get; }
         bool IsSimpleMod { get; }//is the mod/plugin basically just the loading mechanism for a simple RoN mod which just needs to have files copied (true), or is it more like a mini-program (false)
         string LoadResult { get; set; }
