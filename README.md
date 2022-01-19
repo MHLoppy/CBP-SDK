@@ -26,4 +26,7 @@ A simple SDK that allows for the creation of plugins for [CBP Launcher](https://
 The two strings provided to all four void functions are the user's RoN Workshop mods folder and the user's RoN local mods folder. You're free to use or ignore these as you see fit, but when writing the functions they must include two string overloads even if you don't use them.
 
 ### Plugin Examples
-* [CBP Rise of Humankind Plugin](https://github.com/MHLoppy/CBP-RoH-Plugin)
+* GUI: [CBP Rules.xml Editor Plugin](https://github.com/MHLoppy/CBP-RE-Plugin)
+* GUI: [CBP Sound.xml Editor Plugin](https://github.com/MHLoppy/CBP-SE-Plugin)
+* MessageBox GUI only: [CBP Player Colors/Numbers Overlay Plugin](https://github.com/MHLoppy/CBP-PCN-Plugin)
+* MessageBox GUI only: [CBP Rise of Humankind Plugin](https://github.com/MHLoppy/CBP-RoH-Plugin)
