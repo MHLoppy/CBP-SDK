@@ -28,5 +28,5 @@ The two strings provided to all four void functions are the user's RoN Workshop 
 ### Plugin Examples
 * GUI: [CBP Rules.xml Editor Plugin](https://github.com/MHLoppy/CBP-RE-Plugin)
 * GUI: [CBP Sound.xml Editor Plugin](https://github.com/MHLoppy/CBP-SE-Plugin)
-* MessageBox GUI only: [CBP Player Colors/Numbers Overlay Plugin](https://github.com/MHLoppy/CBP-PCN-Plugin)
-* MessageBox GUI only: [CBP Rise of Humankind Plugin](https://github.com/MHLoppy/CBP-RoH-Plugin)
+* Limited GUI (MessageBox only): [CBP Player Colors/Numbers Overlay Plugin](https://github.com/MHLoppy/CBP-PCN-Plugin)
+* Limited GUI (MessageBox only): [CBP Rise of Humankind Plugin](https://github.com/MHLoppy/CBP-RoH-Plugin)
