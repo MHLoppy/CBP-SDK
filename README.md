@@ -30,3 +30,6 @@ The two strings provided to all four void functions are the user's RoN Workshop 
 * GUI: [CBP Sound.xml Editor Plugin](https://github.com/MHLoppy/CBP-SE-Plugin)
 * Limited GUI (MessageBox only): [CBP Player Colors/Numbers Overlay Plugin](https://github.com/MHLoppy/CBP-PCN-Plugin)
 * Limited GUI (MessageBox only): [CBP Rise of Humankind Plugin](https://github.com/MHLoppy/CBP-RoH-Plugin)
+
+### Credits
+The CBP SDK / plugin system is based on a [design by Ahmad Mozaffar](https://github.com/aksoftware98/pluginssystem/).
